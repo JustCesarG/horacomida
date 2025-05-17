@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuenta Regresiva</title>
+    <link rel="stylesheet" href="styles.css">
+    </head>
+<body>
+    <div class="section" id="config-section">
+        <h1>Configurador de Cuenta Regresiva</h1>
+        <label for="hours">Horas:</label>
+        <input type="number" id="hours" min="0" max="23" value="1">
+        
+        <label for="minutes">Minutos:</label>
+        <input type="number" id="minutes" min="0" max="59" value="0">
+        
+        <label for="seconds">Segundos:</label>
+        <input type="number" id="seconds" min="0" max="59" value="0">
+        
+        <button id="start-btn">Iniciar Cuenta Regresiva</button>
+    </div>
+
+    <div class="section hidden" id="countdown-section">
+        <h1>Salí a comer <br>Regreso en: </h1>
+        <div id="countdown">01:00:00</div>
+        <!-- <button id="reset-btn">Reiniciar</button> -->
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>
