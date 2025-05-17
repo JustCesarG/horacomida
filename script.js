@@ -32,10 +32,8 @@ function startCountdown() {
         if (totalSeconds <= 0) {
             clearInterval(countdownInterval);
             document.getElementById('countdown').textContent = "¡TIEMPO COMPLETADO!";
-
             document.getElementById('countdown-section').classList.add('hidden');
             document.getElementById('config-section').classList.remove('hidden');
-
             return;
         }
 
